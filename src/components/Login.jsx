@@ -160,7 +160,7 @@ export default function Login(){
     position: 'relative',
     marginBottom: 50, 
   };
-  const input = {
+  const input4 = {
     width: '75%',
     borderWidth: 0,
     color: 'black',
@@ -174,6 +174,20 @@ export default function Login(){
     marginBottom: 50, 
   };
 
+
+  const input7 = {
+    width: '75%',
+    borderWidth: 0,
+    color: 'black',
+    paddingLeft: 10,
+    borderBottomWidth: 1.5,
+    borderBottomColor: 'red',
+    fontSize: 16,
+    paddingBottom: 10,
+    outline: 'none',
+    position: 'relative',
+    marginBottom: 50, 
+  };
 
 
     return(
