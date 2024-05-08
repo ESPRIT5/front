@@ -1,0 +1,99 @@
+.card4{
+    border: 1px solid #171616;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(94, 5, 5, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    max-width: 350px;
+    height: 500px;
+    position: absolute; 
+    width: 350px;
+    left: 550px; 
+    top: 120px; 
+  }
+  .card-content4 {
+    text-align: center;
+  }
+  
+  .card4 h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+  }
+  .card4 p {
+    font-size: 16px;
+    position: absolute;
+    top: 130px;
+    text-align: center;
+    left: 0px;
+  }
+
+  .card4 img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 240px;
+    left: 50px;
+  }
+
+  .animat-log{
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    top: -100px;
+    position: relative;
+    right: 650px;
+    margin-top: 80px;
+    cursor: pointer;
+    
+}
+.bata {
+  background-color: red;
+  color: black;
+  border: none;
+  padding: 8px 27px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 400px;
+  left: 140px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.bata:hover {
+    background-color: rgb(108, 108, 238); 
+}
+
+.register-link{
+  color:red;
+}
+
+.card4-content p{
+  position: absolute;
+  top: 450px;
+  left: 90px;
+}
+.card4-content img{
+  position: absolute;
+  top: 158px;
+  left: 82px;
+  height: 30px;
+  width: 30px;
+}
+#gigi{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top:241px;
+}
+#gi{
+  position: absolute;
+  top: 317px;
+  
+}
+span{
+  color: #fff;
+}

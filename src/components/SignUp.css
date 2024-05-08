@@ -1,0 +1,26 @@
+#gigi{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top:229px;
+    left: 70px;
+  }
+  #gi{
+    position: absolute;
+    top: 310px;
+    left:70px
+    
+  }
+#babe{
+    
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top:150px;
+        left: 70px;
+      
+}
+
+  span{
+    color: #fff;
+  }

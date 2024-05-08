@@ -1,0 +1,165 @@
+.animat-log{
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    top: -90px;
+    position: relative;
+    left: 0px;
+    margin-top: 80px;
+    cursor: pointer;
+    
+}
+.lekhra{
+    position: relative;
+    right: 0px;
+}
+
+  .titre{
+    margin-top: -200px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    animation: scaleAnimation 2s infinite; 
+    position: relative;
+    left: 550px;
+  }
+
+  body {
+    background-color: #EEEEEE;
+  }
+  
+  .card1 {
+    border: 1px solid #171616;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(94, 5, 5, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    max-width: 300px;
+    height: 400px;
+    position: absolute; 
+    width: 300px;
+    left: 110px; 
+    top: 220px; 
+  }
+  .card-content {
+    text-align: center;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 390px;
+  }
+  .card p {
+    font-size: 16px;
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    left: 0px;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 240px;
+    left: 0px;
+  }
+
+
+  .card {
+    border: 2px solid #e74c3c; 
+    border-radius: 10px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    background-color: #fff; /* White background */
+    max-width: 250px;
+    height: 440px;
+    width: 250px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    text-align: center;
+    color: #333; 
+    transform: scale(1.05); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  
+  .card:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.6); 
+    transform: scale(1.05); 
+  }
+  
+  .card-content1 {
+    text-align: center;
+  }
+  
+  .card1 h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .card1 p {
+    font-size: 16px;
+    position: absolute;
+    top: 130px;
+    text-align: center;
+    left: 0px;
+  }
+
+  .card1 img {
+    height: 270px;
+    width: 270px;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+  }
+
+  .card3 {
+    border: 1px solid #171616;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(94, 5, 5, 0.1);
+    padding: 16px;
+    background-color: #fff;
+    max-width: 300px;
+    height: 400px;
+    width: 300px;
+    position: absolute; 
+    left: 470px; 
+    top: 30px; 
+  }
+  .card-content1 {
+    text-align: center;
+  }
+  
+  .card3 h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .card3 p {
+    font-size: 16px;
+    position: absolute;
+    top: 180px;
+    text-align: center;
+    left: 0px;
+    cursor: pointer;
+  }
+
+  .card3 button {
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 310px;
+    left: 110px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  
+  .card3 button:hover {
+    background-color: rgb(108, 108, 238); 
+  }
