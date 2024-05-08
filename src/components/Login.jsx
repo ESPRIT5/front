@@ -90,7 +90,7 @@ export default function Login(){
             text: 'Please enter a valid password',
           });
         } else {
-          navigate('/Client');
+          navig('/Client');
         }
       })
       .catch((error) => {
@@ -146,6 +146,19 @@ export default function Login(){
     marginTop: 10,
     marginLeft: -20,
     top: 0,
+  };
+  const input = {
+    width: '75%',
+    borderWidth: 0,
+    color: 'black',
+    paddingLeft: 10,
+    borderBottomWidth: 1.5,
+    borderBottomColor: 'red',
+    fontSize: 16,
+    paddingBottom: 10,
+    outline: 'none',
+    position: 'relative',
+    marginBottom: 50, 
   };
   const input = {
     width: '75%',
