@@ -8,7 +8,8 @@ import add from '../assets/add.png'
 import sel from '../assets/sel.png'
 import pass from '../assets/pass.png'
 import { BrowserRouter as Router, Route, useNavigate } from 'react-router-dom';
-
+import axios from 'axios'; 
+import Swal from 'sweetalert2';
 export default function Login(){
   const options = [
     { label: '', value: '' },
@@ -21,6 +22,82 @@ export default function Login(){
   const handleSelectChange = (selectedOption) => {
     setSelectedOption(selectedOption);
   };
+
+  const validatePassword = () => {
+    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    if (!password.match(passwordRegex)) {
+      setPasswordError(
+        'Password must contain at least 8 characters, including at least one digit, one lowercase letter, and one uppercase letter.'
+      );
+      return false; // Return false to indicate validation failure
+    }
+    setPasswordError('');
+    return true;
+  };
+   const validateEmail = () => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return email.match(emailRegex);
+  };
+  const loginFun = () => {
+    console.log('loginFun called')
+    console.log('Login button clicked');
+    if (!email || !password) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Empty Fields',
+        text: 'Please fill in all fields',
+      });
+      return;
+    }
+
+    if (!validateEmail()) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid Email',
+        text: 'Please enter a valid email address',
+      });
+      return;
+    }
+    try {
+      if (!validatePassword()) {
+        // Display an error message when password validation fails
+        Swal.fire({
+          icon: 'error',
+          title: 'Invalid Password',
+          text: 'Password must contain at least 8 characters, including at least one digit, one lowercase letter, and one uppercase letter.',
+        });
+        return;
+      }
+    } catch (error) {
+      console.error('Error in validatePassword:', error);
+      return;
+    }
+     
+
+    const data = {
+      email: email,
+      password: password,
+    };
+    console.log(data);
+    axios
+      .post('http://localhost:4000/authentication/login', data)
+      .then((response) => {
+        console.log(response.data);
+        if (response.data.password === 'false') {
+          Swal.fire({
+            icon: 'error',
+            title: 'Invalid Password',
+            text: 'Please enter a valid password',
+          });
+        } else {
+          navigate('/Client');
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
     const navig = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
